@@ -5,25 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <title>Sign Up!</title>
 </head>
 <body>
+    <div class="header">s</div>
     <div class="body">
-        <div class="hero">hhhhhhhhhhhh</div>
+        <div class="hero">
+            <img class="heroImage" src="./images/Fly.svg" alt="Sign Up Image">
+        </div>
         <div class="formBundle">
-            <div class="signUpHeader"></div>
-            <div class="instructions"></div>
-            <div class="mainform">
-                <form name="formName">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                </form>
-                <form name="email">
-                    <input type="email" placeholder="email address">
-                </form>
-                <form name="password">
-                    <input type="password" placeholder="password">
-                    <input type="password" placeholder="confirm password">
+            <div class="formHeader"><h1>Hello!</h1></div>
+            <div class="formInstruction"><p>bla bla bla bla bla bla bla</p></div>
+            <div class="mainForm">
+                <form action="#" class="form" method="get">
+                    <div class="name">
+                        <div class="labelInput first">
+                            <label for="name">First Name</label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div class="labelInput last">
+                            <label for="name">Last Name</label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+                    <div class="birthGender">
+                        <div class="labelInput first">
+                            <label for="gender">Gender</label>
+                            <select name="gender" id="gender">
+                                <option value="error"selected disabled>----</option>
+                                <option value="male">Male</option>
+                                <option value="female">Male</option>
+                                <option value="nonbinary">Non-Binary</option>
+                                <option value="none">Prefer Not to Say</option>
+                            </select>
+                        </div>
+                        <div class="labelInput last">
+                            <label for="birthday">Birth year</label>
+                            <input type="month" id="birthday">
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

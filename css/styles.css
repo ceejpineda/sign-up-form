@@ -1,27 +1,58 @@
 body{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
 }
-.body{
-    width: 60vw;
-    height: 60vh;
-    display: flex;
-    border: thick solid black;
-    justify-content: space-between;
+input, select{
+    font-size: 2vh;
+    border-radius: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
 }
-.hero{
-    width: 30vw;
-    height: 60vh;
-    border: thick solid black;
+select{
+    font-size: 2vh;
+    padding: 12px;
 }
-.mainform{
-    border: thick solid black;
-    width: 30vw;
-    height: 60vh;
-    flex-wrap: wrap;
+
+.form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1vh;
+}
+.name, .birthGender{
+    display: flex;
+    gap: 1vw;
+    justify-content: flex-start;
+}
+
+.labelInput{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+.first, .last{
+    width: 45%;
+}
+.body{
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    align-items:center;
+    align-self: center;
+    border: thick solid black;
+    border-radius: 50px;
+}
+.hero{
+    width: 50%;
+}
+.heroImage{
+    width: 100%;
+}
+.formBundle{
+    width: 50%;
 }
