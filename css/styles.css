@@ -1,10 +1,17 @@
+:root{
+    --themeOne: #05445E;
+    --themeTwo: #189AB4;
+    --themeThree: #75E6DA;
+    --themeFour: #D4F1F4;
+}
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     margin: 0;
+    background-color: var(--themeFour);
 }
 input, select{
     font-size: 2vh;
@@ -13,10 +20,18 @@ input, select{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     padding: 10px;
+    border: none;
+    outline: none;
+    padding-right: 10px;
+    background-color: var(--themeFour)
 }
 select{
     font-size: 2vh;
     padding: 12px;
+}
+input:focus, select:focus{
+    /* border: thick solid black; */
+    outline: solid var(--themeOne);
 }
 
 .form{
@@ -24,7 +39,7 @@ select{
     flex-direction: column;
     gap: 1vh;
 }
-.name, .birthGender{
+.name, .birthGender, .username, .password{
     display: flex;
     gap: 1vw;
     justify-content: flex-start;
@@ -44,8 +59,16 @@ select{
     display: flex;
     align-items:center;
     align-self: center;
-    border: thick solid black;
     border-radius: 50px;
+    border:thick solid #05445E;
+    background-color: var(--themeTwo);
+    transition: 0.1s ease-in-out;
+}
+.body:hover{
+    box-shadow:-15px -15px var(--themeOne);
+    border:none;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 .hero{
     width: 50%;
