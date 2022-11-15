@@ -25,6 +25,7 @@ body{
     justify-content: center;
     height: auto;
     width: 500px;
+    z-index: 99;
 }
 
 #eyes, #eyes img{
@@ -48,13 +49,73 @@ body{
 
 .form{
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
     flex-direction: column;
     background-color: var(--themeTwo);
     border-radius: 20px;
-    outline: solid 7px black;
+    outline: solid 13px var(--themeOne);
     height: 60vh;
     width: 30vw;
     min-width: 500px;
+}
+.name{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+}
+.password, .info{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+}
+
+p.input-container {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+label {
+    color: #CCC;
+    position: absolute; 
+    cursor: text;
+    transform: translateY(-25px);
+    transition: transform 0.3s ease;
+    left: 0;
+    bottom: -15px;
+}
+input {
+    height: 40px;
+    font-size: 16px;
+    transition: 0.6s;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    background-color: transparent;
+    width: 100%;
+}
+input:focus {
+    outline: none;
+    border-bottom: 5px solid #000000;
+}
+
+.animation label{
+    transform: translateY(-55px);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.animation-color label {
+    color: #000000;
+}
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
 }

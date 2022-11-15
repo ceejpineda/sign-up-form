@@ -13,12 +13,54 @@
         <div class="cat">
             <img id="char1" src="./images/cat1.png" alt="" srcset="">
             <div id="eyes">
-                <img class="eye1" src="./images/eyes.png" alt="" srcset="" style="top:43px; left:-141px;">
-                <img class="eye1" src="./images/eyes.png" alt="" srcset="" style="top:14px; left:8px;">
+                <img id="eyeLeft" class="eye1" src="./images/eyes.png" alt="" srcset="" style="top:43px; left:-141px;">
+                <img id="eyeRight" class="eye1" src="./images/eyes.png" alt="" srcset="" style="top:14px; left:8px;">
             </div>
         </div>
     <div class="form">
+        <h1>Adopt-A-Cat Registration Form</h1>
 
+        <div class="name">
+            <p class="input-container">
+                <input type="text" id="input-firstname" class="login-input">
+                <label for="input-firstname" unselectable="on">First Name</label>
+             </p>
+             <p class="input-container">
+                <input type="text" id="input-lastname" class="login-input">
+                <label for="input-lastname" unselectable="on">Last Name</label>
+             </p>
+        </div>
+
+        <div class="info">
+            <p class="input-container">
+                <input type="tel" id="input-phone" class="login-input" pattern="[0-9]{11}">
+                <label for="input-phone" unselectable="on">Phone Number</label> 
+             </p>
+             <p class="input-container">
+                <input type="date" id="input-date" class="login-input" placeholder="" required>
+                <label for="input-date" unselectable="on">Date Of Birth</label>
+             </p>
+        </div>
+        <div class="email">
+        <p class="input-container">
+            <input type="email" id="input-email" class="login-input">
+            <label for="input-email" unselectable="on">Email Address</label>
+        </p>
+        </div>
+
+         <div class="password">
+            <p class="input-container">
+                <input type="password" id="input-password" class="login-input">
+                <label for="input-password" unselectable="on">Password</label>
+             </p>
+
+             <p class="input-container">
+                <input type="password" id="input-cpassword" class="login-input">
+                <label for="input-cpassword" unselectable="on">Confirm Password</label>
+             </p>
+         </div>
+
+        
     </div>
     </div>
 </body>
