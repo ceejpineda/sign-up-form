@@ -20,22 +20,28 @@ body{
 }
 
 .cat{
-    height: 30vh;
-    width: 30vw;
-    display: flex;
-    align-items: flex-end;
+    display:flex;
+    align-items: center;
     justify-content: center;
+    height: auto;
+    width: 500px;
 }
 
-.cat img{
+#eyes, #eyes img{
+    position: absolute;
+    height: 50px;
+}
+
+#char1{
     object-fit: contain;
-    height: 30vh;
-    width: 30vw;
+    height: 100%;
+    width: 100%;
 }
 
 .body{
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 90vh;
     width: 30vw;
 }
@@ -50,4 +56,5 @@ body{
     outline: solid 7px black;
     height: 60vh;
     width: 30vw;
+    min-width: 500px;
 }
