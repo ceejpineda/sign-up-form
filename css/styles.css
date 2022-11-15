@@ -4,78 +4,50 @@
     --themeThree: #75E6DA;
     --themeFour: #D4F1F4;
 }
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
 body{
-    height: 100vh;
+    background-color: var(--themeFour);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    background-color: var(--themeFour);
+    width: 100vw;
+    height: 100vh;
 }
-input, select{
-    font-size: 2vh;
-    border-radius: 50px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 10px;
-    border: none;
-    outline: none;
-    padding-right: 10px;
-    background-color: var(--themeFour)
+
+.cat{
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
-select{
-    font-size: 2vh;
-    padding: 12px;
+
+.cat img{
+    object-fit: contain;
+    height: 30vh;
+    width: 30vw;
 }
-input:focus, select:focus{
-    /* border: thick solid black; */
-    outline: solid var(--themeOne);
+
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 30vw;
 }
 
 .form{
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
     flex-direction: column;
-    gap: 1vh;
-}
-.name, .birthGender, .username, .password{
-    display: flex;
-    gap: 1vw;
-    justify-content: flex-start;
-}
-
-.labelInput{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5vh;
-}
-.first, .last{
-    width: 45%;
-}
-.body{
-    height: 70vh;
-    width: 70vw;
-    display: flex;
-    align-items:center;
-    align-self: center;
-    border-radius: 50px;
-    border:thick solid #05445E;
     background-color: var(--themeTwo);
-    transition: 0.1s ease-in-out;
-}
-.body:hover{
-    box-shadow:-15px -15px var(--themeOne);
-    border:none;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-.hero{
-    width: 50%;
-}
-.heroImage{
-    width: 100%;
-}
-.formBundle{
-    width: 50%;
+    border-radius: 20px;
+    outline: solid 7px black;
+    height: 60vh;
+    width: 30vw;
 }
