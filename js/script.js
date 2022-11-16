@@ -83,3 +83,7 @@ function doThis() {
         eye1.style.visibility = "hidden";
     }
 }
+
+function makeSubmit(){
+    document.getElementById('fullForm').submit()
+}
